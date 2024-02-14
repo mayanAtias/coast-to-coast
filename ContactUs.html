@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>חוף אל חוף - צור קשר</title>
+    <link rel="icon" type="images/HomePage/logovan-icon" href="images/HomePage/logovan.png">
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="styleshhet" href="https://stackpath.boothstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5f0da5873e.js" crossorigin="anonymous"></script>
+    <meta name="description" content="קורס - פיתוח אתרי אינטרנט, המכון הטכנולוגי חולון, טכנולוגיות למידה" />
+    <meta name="keywords" content="חוף אל חוף, ארה״ב, מסלולים, יומן מסע" />
+    <meta name="author" content="Paz Ivgi, Mayan Atias" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="mainnav">
+            <a href="index.html"> <img src="images/HomePage/logovan.png" alt="לוגו האתר - קרוואן"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li><a href="Maslulim.html">מסלולים</a></li>
+                    <li><a href="YomanMasa.html">יומן מסע</a></li>
+                    <li><a href="ContactUs.html">צור קשר</a></li>
+                    <li><a href="About.html">אודות</a></li>
+                    <li><a href="Map.html">מפת אתר</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <nav aria-label="ContactUs-nav">
+            <ol>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="ContactUs.html"><u>צור קשר</u></a></li>
+            </ol>
+        </nav>
+    </div>
+    <section class="backgroundcontactus">
+        <div class="text-boxcontactus">
+            <h1>צור קשר</h1>
+            <br />
+            <h2>לכל שאלה, התייעצות או רעיון חדש למסלול, מוזמנים ליצור איתנו קשר ונענה על כל שאלה!</h2>
+        </div>
+        <br />
+        <div class="contactusform">
+            <form aria-label="טופס - צור קשר">
+                <input type="hidden" id="Email" name="coasttocoast" value="pazivgi1@gmail.com">
+                <label for="fname">*שם פרטי</label>
+                <br />
+                <input required="required" type="text" id="fname" name="firstname" placeholder="הזן שם פרטי">
+                <br />
+                <label for="lname">שם משפחה</label>
+                <br />
+                <input type="text" id="lname" name="lastname" placeholder="הזן שם משפחה">
+                <br />
+                <label for="email">*כתובת מייל</label>
+                <br />
+                <input required="required" type="text" id="email" name="email" placeholder="הזן כתובת מייל">
+                <br />
+                <label for="email">*אימות כתובת מייל</label>
+                <br />
+                <input required="required" type="text" id="email" name="email" placeholder="הזן כתובת מייל">
+                <br />
+                <label for="country">עיר</label>
+                <br />
+                <select id="country" name="country">
+                    <option value="הזן ערך">בחר ערך</option>
+                    <option value="אילת">אילת</option>
+                    <option value="אשדוד">אשדוד</option>
+                    <option value="אשקלון">אשקלון</option>
+                    <option value="באר שבע">באר שבע</option>
+                    <option value="בת ים">בת ים</option>
+                    <option value="אילת">הוד השרון</option>
+                    <option value="הרצליה">הרצליה</option>
+                    <option value="חדרה">חדרה</option>
+                    <option value="חולון">חולון</option>
+                    <option value="חיפה">חיפה</option>
+                    <option value="טבריה">טבריה</option>
+                    <option value="יבנה">יבנה</option>
+                    <option value="ירושלים">ירושלים</option>
+                    <option value="כפר סבא">כפר סבא</option>
+                    <option value="נהריה">נהריה</option>
+                    <option value="נתניה">נתניה</option>
+                    <option value="עפולה">עפולה</option>
+                    <option value="פתח תקווה">פתח תקווה</option>
+                    <option value="ראשון לציון">ראשון לציון</option>
+                    <option value="רמת גן">רמת גן</option>
+                    <option value="רמת השרון">רמת השרון</option>
+                    <option value="רעננה">רעננה</option>
+                    <option value="שדרות">שדרות</option>
+                    <option value="ישראל">תל אביב</option>
+                </select>
+                <br />
+                <fieldset>
+                    <legend >*נושא הפניה</legend>
+                    <br/>
+                    <input required="required" type="radio" name="pnia"/> תקלה טכנית
+                    <input required="required" type="radio" name="pnia"/> ייעוץ אישי לגבי טיול
+                    <input required="required" type="radio" name="pnia"/> הוספת המלצה ליומן מסע
+                    <input required="required" type="radio" name="pnia"/> אחר
+                </fieldset>
+                <br />
+                <label for="subject">תוכן הפניה</label>
+                <br />
+                <textarea id="share" name="share" placeholder="שתף אותנו!"></textarea>
+                <br />
+                <input type="checkbox" id="checkbox1"> 
+                <label for="checkbox"> אשמח לקבל תוכן על טיולים חדשים, יומני מסע והודעות בנושא.</label>
+                <br/>
+                <br/>
+                <input type="submit" id="submit" value="שלח">
+                <div id="feedback"></div>
+            </form>
+        </div>
+        <br>
+    </section>
+
+
+    <!----Footer ---->
+
+    <footer class="footer">
+        <div class="footermenu">
+            <a href="index.html" class="page-footer1">דף הבית</a>
+            <a href="Maslulim.html" class="page-footer1">מסלולים</a>
+            <a href="YomanMasa.html" class="page-footer1">יומן מסע</a>
+            <a href="ContactUs.html" class="page-footer1">צור קשר</a>
+            <a href="About.html" class="page-footer1">אודות</a>
+            <a href="Map.html" class="page-footer1">מפת אתר</a>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <br />
+                <p id="names">Made With <i class="fa fa-heart-o"></i> By Paz Ivgi And Mayan Atias </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
